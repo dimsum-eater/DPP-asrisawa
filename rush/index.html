@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An educational overview of fighter aircraft in the Royal Thai Air Force.">
+  <title>Royal Thai Air Force | Fighter Aircraft</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sticky navigation: links jump to the matching sections below. -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Royal Thai Air Force home">
+        <span><img src="rtaf.svg" alt="Royal Thai Air Force Logo" width="50" height="50"></span>
+        <span>Fighter Aircrafts <small>Royal Thai Air Force</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#overview">Overview</a>
+        <a href="#aircraft">Aircraft</a>
+        <a href="#mission">Roles &amp; Readiness</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / SECTION 1 -->
+    <section class="hero" id="home">
+      <img src="group.webp" alt="Royal Thai Air Force fighter jets in formation" width="40%">
+      <div class="container hero-content">
+        <p class="eyebrow">AVIATION • DEFENCE • TECHNOLOGY</p>
+        <h1>Fighter Jets of the<br><span>Royal Thai Air Force</span></h1>
+        <p class="hero-copy">Explore the aircraft, capabilities, and mission behind Thailand's air defence.</p>
+        <a class="button button-primary" href="#overview">Explore the fleet <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-label"><span class="status-dot"></span> EDUCATIONAL FIELD GUIDE</div>
+    </section>
+
+    <!-- SECTION 2: overview and context -->
+    <section class="section container" id="overview">
+      <div class="section-heading">
+        <p class="eyebrow">01 / OVERVIEW</p>
+        <h2>Guarding the skies</h2>
+        <p class="section-intro">The Royal Thai Air Force (RTAF) operates combat aircraft to help protect national airspace and support joint operations. Its fleet has evolved through several generations of aviation technology.</p>
+      </div>
+      <div class="overview-grid">
+        <img class="overview-image" src="f16a.webp" width="800" height="400" alt="F-16 Fighting Falcon using afterburner">
+        </div>
+        <div class="fact-panel">
+          <div class="fact-number">01 <span>—</span></div>
+          <h3>Air power with purpose</h3>
+          <p>Fighter aircraft combine speed, sensors, communications, and trained crews. Their effectiveness depends on the entire system—not just the aircraft itself.</p>
+          <ul class="check-list">
+            <li><span>✓</span> Airspace surveillance and defence</li>
+            <li><span>✓</span> Training and readiness</li>
+            <li><span>✓</span> Cooperation with other services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: aircraft profiles. Keep details general and educational. -->
+    <section class="section section-dark" id="aircraft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / AIRCRAFT</p>
+          <h2>Meet the aircraft</h2>
+          <p class="section-intro">A quick introduction to notable fighter types associated with the RTAF. Service status and fleet composition can change over time.</p>
+        </div>
+        <div class="aircraft-grid">
+          <article class="aircraft-card">
+             <span class="aircraft-tag">MULTIROLE</span>
+            <img class="aircraft-image" src="f16.jpg" width="400" height="200" alt="F-16 Fighting Falcon in flight">
+            <div class="card-body">
+              <p class="card-kicker">LOCKHEED MARTIN</p>
+              <h3>F-16 Fighting Falcon</h3>
+              <p>A single-engine multirole fighter known for its agility and broad range of mission options. The RTAF has operated F-16 variants for decades.</p>
+              <button class="text-button details-button" data-aircraft="f16" aria-expanded="false">Read quick facts <span>＋</span></button>
+              <div class="extra-details" id="details-f16" hidden> <strong>At a glance</strong><p>Role: multirole fighter<br>Design: single engine, single seat in common configurations<br>Note: specific equipment varies by variant and upgrade.</p></div>
+            </div>
+          </article>
+          <article class="aircraft-card">
+              <span class="aircraft-tag">MULTIROLE</span>
+              <img src="gripen.jpg" width="400" height="225" alt="JAS 39 Gripen in flight">
+            <div class="card-body">
+              <p class="card-kicker">SAAB</p>
+              <h3>JAS 39 Gripen</h3>
+              <p>A Swedish multirole fighter designed around modern sensors, data links, and flexible operations. Thailand operates Gripen C/D aircraft.</p>
+              <button class="text-button details-button" data-aircraft="gripen" aria-expanded="false">Read quick facts <span>＋</span></button>
+              <div class="extra-details" id="details-gripen" hidden><strong>At a glance</strong><p>Role: multirole fighter<br>Design: single-engine aircraft with advanced avionics<br>Note: capabilities depend on variant and configuration.</p></div>
+            </div>
+          </article>
+          <article class="aircraft-card">
+              <span class="aircraft-tag">LIGHT FIGHTER</span>
+              <img src="f5.jpg" alt="F-5 Tiger II in flight" width="400" height="225">
+            <div class="card-body">
+              <p class="card-kicker">NORTHROP</p>
+              <h3>F-5 Tiger II</h3>
+              <p>A compact supersonic fighter with a long service history in Thailand. Upgraded F-5TH aircraft have received modernised systems.</p>
+              <button class="text-button details-button" data-aircraft="f5" aria-expanded="false">Read quick facts <span>＋</span></button>
+              <div class="extra-details" id="details-f5" hidden><strong>At a glance</strong><p>Role: light fighter / air defence<br>Design: twin-engine, compact airframe<br>Note: modernisation can extend the usefulness of older airframes.</p></div>
+            </div>
+          </article>
+        </div>
+        <p class="fine-print">This page is an educational overview, not an official RTAF publication. Verify current inventory and operational status with official sources.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: roles and readiness -->
+    <section class="section container" id="mission">
+      <div class="section-heading">
+        <p class="eyebrow">03 / ROLES &amp; READINESS</p>
+        <h2>More than the aircraft</h2>
+        <p class="section-intro">Air power relies on people, maintenance, planning, and coordination. These building blocks help aircraft operate safely and effectively.</p>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-item"><div class="mission-icon">◉</div><h3>Air defence</h3><p>Monitor and respond to potential threats to national airspace within established procedures.</p></article>
+        <article class="mission-item"><div class="mission-icon">⌁</div><h3>Training</h3><p>Develop pilot proficiency, crew coordination, and decision-making through structured training.</p></article>
+        <article class="mission-item"><div class="mission-icon">⚙</div><h3>Maintenance</h3><p>Ground crews inspect, repair, and prepare aircraft to support safety and serviceability.</p></article>
+      </div>
+      <div class="callout">
+        <div><p class="eyebrow">KEEP EXPLORING</p><h3>Interested in aviation technology?</h3><p>Compare aircraft design, avionics, and the role of teamwork in modern air operations.</p></div>
+        <a class="button button-outline" href="#home">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><span><img src="rtaf.svg" alt="Royal Thai Air Force Logo" width="50" height="50"></span><span>Royal Thai Air Force<small>The Thai airspace, none shall ever invade</small></span></a>
+      <p>Made by Airforce1 <span id="year"></span></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
